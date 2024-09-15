@@ -1,0 +1,25 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "dotnetcustom"
+  annotations:
+    github.com/project-slug: kubeosx/dotnetcustom
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: "dotnetcustom"
+    backstage.io/kubernetes-namespace: "dev"
+    prometheus.io/alert: all
+  tags:
+    - dotnet
+    - webapi
+  links:
+    - url: https://github.com/kubeosx/dotnetcustom
+      icon: web
+      title: Github
+    - url: https://github.com/kubeosx/dotnetcustom/issues
+      icon: web
+      title: Github Issues
+spec:
+  type: service
+  lifecycle: experimental
+  owner: 
+  system:  
